@@ -1,5 +1,5 @@
 <template>
-  <bael-grid :posts="posts" />
+  <bael-gridcat :posts="posts" />
 </template>
 
 <script>
