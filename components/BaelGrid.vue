@@ -16,6 +16,11 @@
           >{{p.thumbnail}}</nuxt-link>
         </div>
       </div>
+        <div class="feat-wrapper" :key="`${title}-featimage`">
+    <transition appear name="fade">
+      <img draggable="false" class="featured-image" loading="lazy" :src="thumbnail" :alt="title" />
+    </transition>
+  </div>
     </div>
     <div v-else class="r full-height browse">
       <div class="xs-p2 c-100 xs-flex xs-flex-align-center xs-flex-justify-center xs-text-center">
@@ -28,6 +33,7 @@
 <script>
 export default {
   props: {
+     ["title", "thumbnail"],
     posts: {
       type: Array,
     },
