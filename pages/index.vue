@@ -4,6 +4,7 @@
 
 <script>
 import BaelGrid from "~/components/BaelGrid";
+import BaelGrid from "~/components/BaelGridcat";
 import FullGrid from "~/components/FullGrid";
 import _chunk from "lodash/chunk";
 export default {

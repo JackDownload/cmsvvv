@@ -21,24 +21,6 @@
         <div v-if="posts.length < 1 && !busy">No Results.</div>
       </div>
     </div>
-        <div
-      class="full-height single"
-      style="min-height:calc(85vh - var(--nav-height));margin-top:var(--nav-height)"
-    >
-      <div class="xs-mt2 xs-p2 bcg-item">
-        <div class="item xs-block xs-full-height">
-          <lazy-featured-image
-            v-if="page.thumbnail"
-            :title="page.title"
-            :thumbnail="page.thumbnail"
-          />
-          <h1 class="xs-py3 main-title">{{page.title}}</h1>
-          <div class="xs-py3 post-content text-gray">
-            <nuxt-content :document="page" />
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
 
@@ -48,6 +30,8 @@ export default {
     posts: {
       type: Array,
     },
+    items:
+    { type: Array},
   },
   data() {
     return {};
