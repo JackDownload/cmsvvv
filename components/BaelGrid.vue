@@ -5,6 +5,7 @@
         v-intersect
         v-for="(p,i) in posts"
         :key="i"
+        :thumbnail="p.thumbnail"
         class="xs-border xs-border-top-none xs-border-left-none xs-p2 bcg-item"
         :style="`transition-delay:0.${i * .5}s`"
       >
