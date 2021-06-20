@@ -33,7 +33,6 @@
 <script>
 export default {
   props: {
-     ["title", "thumbnail"],
     posts: {
       type: Array,
     },
