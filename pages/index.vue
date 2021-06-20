@@ -45,7 +45,7 @@ export default {
     return +to.query.page > +from.query.page ? "slide-right" : "slide-left";
   },
   name: "Index",
-  components: { BaelGrid, FullGrid },
+  components: { BaelGrid, FullGrid, BaelGridcat },
   computed: {
     getLayout() {
       return this.$store.state.info.altlayout ? "FullGrid" : "BaelGrid" = "BaelGridcat";
