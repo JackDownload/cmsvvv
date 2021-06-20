@@ -4,7 +4,7 @@
 
 <script>
 import BaelGrid from "~/components/BaelGrid";
-import BaelGrid from "~/components/BaelGridcat";
+import BaelGridcat from "~/components/BaelGridcat";
 import FullGrid from "~/components/FullGrid";
 import _chunk from "lodash/chunk";
 export default {
@@ -48,7 +48,7 @@ export default {
   components: { BaelGrid, FullGrid },
   computed: {
     getLayout() {
-      return this.$store.state.info.altlayout ? "FullGrid" : "BaelGrid";
+      return this.$store.state.info.altlayout ? "FullGrid" : "BaelGrid" = "BaelGridcat";
     },
   },
 };
