@@ -48,7 +48,7 @@ export default {
   components: { BaelGrid, FullGrid, BaelGridcat },
   computed: {
     getLayout() {
-      return this.$store.state.info.altlayout ? "FullGrid" : "BaelGrid" = "BaelGridcat";
+      return this.$store.state.info.altlayout ? "FullGrid" : "BaelGrid";
     },
   },
 };
