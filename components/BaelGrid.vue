@@ -21,11 +21,6 @@
         <div v-if="posts.length < 1 && !busy">No Results.</div>
       </div>
     </div>
-                        <lazy-featured-image
-            v-if="post.thumbnail"
-            :title="post.title"
-            :thumbnail="post.thumbnail"
-          />
   </div>
 </template>
 
